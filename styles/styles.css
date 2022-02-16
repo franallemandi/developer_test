@@ -1,0 +1,66 @@
+footer{
+    height: 60px;
+    width: 95%;
+    border-top: 1px solid black;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+}
+#add_ftr{
+    height: 60px;
+    width: 95%;
+    border-top: 1px solid black;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    position:absolute;
+    bottom:-350px;
+    display: block;
+}
+.ftr_desc{
+    text-align: center;
+}
+.separator_bar{
+    width:100%;
+    height: 20px;
+}
+#sup_buttons{
+    float: right;
+    width: auto;
+    margin-right: 0;
+}
+.page_title{
+    margin-left: 50px;
+}
+#sup_bar{
+    border-bottom: 1px solid black;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#boxes_container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+.card-text{
+    text-align: center;
+}
+.form-container{
+    margin-left: 50px;
+    width:40%;
+    float: left;
+}
+.hidden_div{
+    display: none;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border: 1px solid black;
+    padding: 15px;
+}
+.description{
+    text-align: center;
+}
