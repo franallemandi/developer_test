@@ -49,23 +49,12 @@
     <div id="boxes_container">
     
 <?php
-    $new_list = new \Classes\Actions\ProductsClass(
-        "localhost",
-        "id17022664_fallemandi",
-        "Galarza..333",
-        "id17022664_phpmysqlintermedio"
-    );
+    $new_list = new \Classes\Actions\ProductsClass();
     $new_list->sqlQuery($list = null);
-    if (isset($_POST['mass_delete'])) {
-        $new_delete = new \Classes\Actions\DeleteClass(
-            "localhost",
-            "id17022664_fallemandi",
-            "Galarza..333",
-            "id17022664_phpmysqlintermedio",
-            $_POST
-        );
-    }
-    ?>
+if (isset($_POST['mass_delete'])) {
+    $new_delete = new \Classes\Actions\DeleteClass($_POST);
+}
+?>
         </form>
     </div>
 <footer>

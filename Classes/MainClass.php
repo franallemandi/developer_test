@@ -5,15 +5,15 @@
 abstract class MainClass
 {
     protected $connection;
-    private $data = array();
 
-    public function __construct($host, $user, $password, $base)
+    public function __construct()
     {
-        $this->connection = new \mysqli($host, $user, $password, $base);
-        if (mysqli_connect_error()) {
-            die('Error de Conexión (' . mysqli_connect_errno() . ') '
-                    . mysqli_connect_error());
-        }
+        $this->connection = DbClass::setConnection(
+            "localhost",
+            "id17022664_fallemandi",
+            "Galarza..333",
+            "id17022664_phpmysqlintermedio"
+        );
     }
     public function __destruct()
     {

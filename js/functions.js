@@ -44,9 +44,11 @@ function getSku() {
     for (var i = 0; i < vars.length; i++) {
         var pair = vars[i].split("=");
         if (pair[0] == 'sku') {
-            alert("SKU has already been defined for this product: " + pair[1]);
+            var word = pair[1].replace(/%20/g, " ");
+            alert("SKU has already been defined for this product: " + word);
         } else if (pair[0] == 'sku_b') {
-            alert("SKU " + pair[1] + " already used for other product. Choose a different one.");
+            var word = pair[1].replace(/%20/g, " ");
+            alert("SKU " + word + " already used for other product. Choose a different one.");
         }
     }
     return (false);
